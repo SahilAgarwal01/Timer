@@ -75,4 +75,5 @@ export class TimerComponent implements OnInit, OnDestroy {
       this.timerSubscription.unsubscribe();
     }
   }
+
 }

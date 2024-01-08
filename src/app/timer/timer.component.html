@@ -1,6 +1,6 @@
 <div>
   <h1>{{ displayTime }}</h1>
-  <button (click)="startTimer()" *ngIf="!timerRunning">Start</button>
+  <button (click)="startTimer()" *ngIf="!timerRunning && !timerPaused">Start</button>
   <button (click)="resetTimer()">Reset</button>
   <button (click)="pauseTimer()" *ngIf="timerRunning">Pause</button>
   <button (click)="resumeTimer()" *ngIf="!timerRunning && timerPaused">
